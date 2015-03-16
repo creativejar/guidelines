@@ -1,0 +1,9 @@
+# Site settings
+title: UI Guidelines
+email: ben@creative-jar.com
+baseurl: "/guidelines" # the subpath of your site, e.g. /blog/
+twitter_username: creativejar
+github_username:  creativejar
+
+# Build settings
+markdown: kramdown
