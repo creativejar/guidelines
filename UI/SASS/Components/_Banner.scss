@@ -23,4 +23,7 @@ category: page
 		@include							flexbox;		
 		@include							align-items(center);
 	}
+    @include breakpoint($breakpoint-small) {
+        height:                             300px;
+    }
 }
