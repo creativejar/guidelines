@@ -1,7 +1,7 @@
 <header role="banner">
 	<a class="cj-logo" href="http://www.creative-jar.com">
         <span hidden>Creative Jar</span>
-        <object type="image/svg+xml" data="/Uploads/Images/creative-jar-logo.svg"></object>
+        <object type="image/svg+xml" data="{{ "/Uploads/Images/creative-jar-logo.svg" | prepend: site.baseurl }}"></object>
     </a>
     <nav role="navigation">
 	    <button data-icon-name="hamburger"><span>Menu</span></button>
@@ -9,7 +9,7 @@
 		<ul>
 			{% for p in pages %}
 			<li>
-				<a {% if p.url == page.url %}class="is-active"{% endif %} href="{{ p.url }}">{{ p.menu-label }}</a>
+				<a {% if p.url == page.url %}class="is-active"{% endif %} href="{{ p.url | prepend: site.baseurl }}">{{ p.menu-label }}</a>
 			</li>
 			{% endfor %}
 		</ul>
