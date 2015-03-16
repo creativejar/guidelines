@@ -187,19 +187,25 @@ h1, h2, h3, h4, h5, h6 {
 
 /* line 18, ../SASS/Base/_Headings.scss */
 h1 {
-  font: 700 120px/72px "Montserrat", sans-serif;
+  font: 700 120px/1 "Montserrat", sans-serif;
   text-align: center;
   text-transform: uppercase;
 }
+@media (max-width: 500px) {
+  /* line 18, ../SASS/Base/_Headings.scss */
+  h1 {
+    font-size: 50px;
+  }
+}
 
-/* line 24, ../SASS/Base/_Headings.scss */
+/* line 27, ../SASS/Base/_Headings.scss */
 h2 {
   font: 700 42px "Montserrat", sans-serif;
   text-align: center;
   text-transform: uppercase;
 }
 
-/* line 30, ../SASS/Base/_Headings.scss */
+/* line 33, ../SASS/Base/_Headings.scss */
 h3:first-child {
   margin-top: 0;
 }
@@ -217,10 +223,17 @@ Adding a `<span>` element to text within your heading will result in multiple li
 	<h1><span>Heading 1</span> Lorem ipsum dolor</h1>
 ```
 */
-/* line 48, ../SASS/Base/_Headings.scss */
+/* line 51, ../SASS/Base/_Headings.scss */
 h1 span {
   font-size: 18px;
   display: block;
+  margin-bottom: 5px;
+}
+@media (max-width: 500px) {
+  /* line 51, ../SASS/Base/_Headings.scss */
+  h1 span {
+    font-size: 14px;
+  }
 }
 
 /* line 5, ../SASS/Base/_Paragraphs.scss */
@@ -313,6 +326,12 @@ category: page
   -webkit-align-items: center;
   -moz-align-items: center;
   align-items: center;
+}
+@media (max-width: 500px) {
+  /* line 16, ../SASS/Components/_Banner.scss */
+  .banner {
+    height: 300px;
+  }
 }
 
 /*doc
@@ -495,6 +514,12 @@ header[role=banner] a.cj-logo object, header[role=banner] a.cj-logo img {
   transition: all 0.25s ease-in;
   width: 41px;
 }
+@media (max-width: 500px) {
+  /* line 5, ../SASS/Regions/_Header.scss */
+  header[role=banner] {
+    padding: 3.44828%;
+  }
+}
 
 /* line 6, ../SASS/Regions/_Navigation.scss */
 nav[role=navigation] button {
@@ -542,7 +567,14 @@ nav[role=navigation] ul {
   width: 23.72881%;
   z-index: 90;
 }
-/* line 47, ../SASS/Regions/_Navigation.scss */
+@media (max-width: 500px) {
+  /* line 34, ../SASS/Regions/_Navigation.scss */
+  nav[role=navigation] ul {
+    right: -65.51724%;
+    width: 65.51724%;
+  }
+}
+/* line 51, ../SASS/Regions/_Navigation.scss */
 nav[role=navigation] ul li a {
   color: white;
   display: block;
@@ -556,7 +588,7 @@ nav[role=navigation] ul li a {
   -webkit-transition: all 0.25s ease-in;
   transition: all 0.25s ease-in;
 }
-/* line 56, ../SASS/Regions/_Navigation.scss */
+/* line 60, ../SASS/Regions/_Navigation.scss */
 nav[role=navigation] ul li a:hover {
   background: white;
   color: #007b91;

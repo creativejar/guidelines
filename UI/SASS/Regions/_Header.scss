@@ -23,4 +23,7 @@ header[role=banner] {
             width:                      	41px;
         }
 	}
+	@include breakpoint($breakpoint-small) {
+		padding:							gutter(6);
+    }
 }

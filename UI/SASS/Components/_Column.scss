@@ -31,7 +31,7 @@ category: Content
 	&:last-child {
 		margin-bottom: 						$spacing-unit-base*-3;
 	}
-	@include breakpoint(max-width 900px) {
+	@include breakpoint($breakpoint-large) {
 		display: 							block;
 		&:before {
 			display: 						none;
@@ -61,7 +61,7 @@ category: Content
 	h2, h3, h4, h5, h6 {
 		text-align: 						left;
 	}
-	@include breakpoint(max-width 900px) {
+	@include breakpoint($breakpoint-large) {
 		float:								none;
 		width:								auto;
 		+ .l-col:after {

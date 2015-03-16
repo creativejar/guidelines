@@ -16,9 +16,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-	font:									700 120px/72px $font-family-brand;
+	font:									700 120px/1 $font-family-brand;
 	text-align: 							center;
 	text-transform: 						uppercase;
+    @include breakpoint($breakpoint-small) {
+        font-size:                          50px;
+    }
 }
 
 h2 {
@@ -48,4 +51,8 @@ Adding a `<span>` element to text within your heading will result in multiple li
 h1 span {
 	font-size:								18px;
 	display: 								block;
+	margin-bottom: 							5px;
+    @include breakpoint($breakpoint-small) {
+        font-size:                          14px;
+    }
 }

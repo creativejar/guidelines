@@ -19,3 +19,7 @@ $font-family-brand: 						$font-family-base;
 $spacing-unit-base: 						25px;
 $spacing-unit-large:						$spacing-unit-base*2;
 $spacing-unit-small:						$spacing-unit-base/2;
+
+// Breakpoints
+$breakpoint-large:							max-width 900px;
+$breakpoint-small:							max-width 500px;

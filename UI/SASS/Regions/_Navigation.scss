@@ -43,6 +43,10 @@ nav[role=navigation] {
 	    top: 								0;
 	    width: 								span(3 of 12);
 	    z-index: 							90;
+	    @include breakpoint($breakpoint-small) {
+		    right:							span(4 of 6)*-1;
+		    width:							span(4 of 6);
+	    }
 	    li {
 		    a {
 			    color:						palette(neutral);
