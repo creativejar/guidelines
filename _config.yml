@@ -1,7 +1,7 @@
 # Site settings
 title: UI Guidelines
 email: ben@creative-jar.com
-baseurl: "/guidelines" # the subpath of your site, e.g. /blog/
+baseurl: "/guidelines/"
 twitter_username: creativejar
 github_username:  creativejar
 
