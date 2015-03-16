@@ -2,7 +2,7 @@
     return {
         svgIconConfig: {
             hamburger: {
-                url: '/UI/Images/IconMenu.svg',
+                url: '/guidelines/UI/Images/IconMenu.svg',
                 animation: [
                     {
                         el: 'path:nth-child(1)',

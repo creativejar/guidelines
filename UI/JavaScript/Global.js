@@ -1,5 +1,5 @@
 require.config({
-    baseUrl: '/UI/JavaScript',
+    baseUrl: '/guidelines/UI/JavaScript',
     paths: {
         jquery: 'Vendor/jquery-1.11.2.min',
         'jquery-easing': 'Vendor/jquery.easing.1.3',
