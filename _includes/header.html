@@ -9,7 +9,7 @@
 		<ul>
 			{% for p in pages %}
 			<li>
-				<a {% if p.url == page.url %}class="is-active"{% endif %} href="{{ p.url }}">{{ p.menu-label }}</a>
+				<a {% if p.url == page.url %}class="is-active"{% endif %} href="{{ p.url | prepend: site.baseurl }}">{{ p.menu-label }}</a>
 			</li>
 			{% endfor %}
 		</ul>
