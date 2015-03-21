@@ -16,8 +16,6 @@ Guidelines define best practice. They are not necessarily mandatory, but should 
 * maintainable
 * scalable
 
-These architectural concepts are explained very well on the Appfolio Engineering blog:
-
 Recommended reading:
 
 * Nicole Sullivan, [OOCSS](https://github.com/stubbornella/oocss/wiki)

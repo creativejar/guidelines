@@ -134,7 +134,9 @@
 		<p>Quickly and easily ensure proper rendering of your content by declaring an explicit character encoding. When doing so, you may avoid using character entities in your HTML, provided their encoding matches that of the document (generally UTF-8).</p>
 	</div>
 	<div class="l-col">
-		<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;meta</span> <span class="na">http-equiv=</span><span class="s">&quot;X-UA-Compatible&quot;</span> <span class="na">content=</span><span class="s">&quot;IE=Edge&quot;</span><span class="nt">&gt;</span></code></pre></div>
+		<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;head&gt;</span>
+	<span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">&quot;utf-8&quot;</span><span class="nt">&gt;</span>
+<span class="nt">&lt;/head&gt;</span></code></pre></div>
 	</div>
 </div>
 <div class="l-container columns" id="ie-compatibility-mode">
@@ -143,9 +145,7 @@
 		<p>Internet Explorer supports the use of a document compatibility <code>&lt;meta&gt;</code> tag to specify what version of IE the page should be rendered as. Unless circumstances require otherwise, it's most useful to instruct IE to use the latest supported mode with <strong>edge mode</strong>.</p>
 	</div>
 	<div class="l-col">
-		<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;head&gt;</span>
-	<span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">&quot;utf-8&quot;</span><span class="nt">&gt;</span>
-<span class="nt">&lt;/head&gt;</span></code></pre></div>
+		<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;meta</span> <span class="na">http-equiv=</span><span class="s">&quot;X-UA-Compatible&quot;</span> <span class="na">content=</span><span class="s">&quot;IE=Edge&quot;</span><span class="nt">&gt;</span></code></pre></div>
 	</div>
 </div>
 <div class="l-container columns" id="css-javascript-includes">
@@ -229,7 +229,7 @@
 		<p>By using a semantic HTML structure, assistive technologies can make better understanding of the content we are displaying to the user and how to interpret them.</p>
 		<p>An example would be headings. Anything which is a heading should be marked up using the appropriate HTML tags (<code>&lt;h1&gt;</code> through to <code>&lt;h6&gt;</code>) and as a result will form a document outline for the page.</p>
 		<p>HTML5 also introduces many new HTML elements which we can use to make our templates more semantic, and reduces the amount of <code>&lt;div&gt;</code> tags we need to use, which offer no semantic meaning and are just a generic container.</p>
-		<p>When using HTML5 Sectioning elements (e.g. <code>&lt;section&gt;</code>, <code>&lt;article&gt;</code>), please ensure to begin with a <coded>&lt;h1&gt;</coded> as this begins a new section within the document outline.</p>
+		<p>When using HTML5 Sectioning elements (e.g. <code>&lt;section&gt;</code>, <code>&lt;article&gt;</code>), please ensure to begin with a <code>&lt;h1&gt;</code> as this begins a new section within the document outline.</p>
 	</div>
 	<div class="l-col">
 		<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;article&gt;</span>
