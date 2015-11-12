@@ -6,15 +6,15 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>UI Guidelines &bull; Project Structure</title>
 		<meta name="description" content="">		
-		<link rel="stylesheet" href="/UI/CSS/Default.css">
-		<link rel="canonical" href="/project-structure/">
-		<link rel="alternate" type="application/rss+xml" title="UI Guidelines" href="/feed.xml" />
+		<link rel="stylesheet" href="/guidelines/UI/CSS/Default.css">
+		<link rel="canonical" href="/guidelines/project-structure/">
+		<link rel="alternate" type="application/rss+xml" title="UI Guidelines" href="/guidelines/feed.xml" />
 	</head>
   <body>
     <header role="banner">
 	<a class="cj-logo" href="http://www.creative-jar.com">
         <span hidden>Creative Jar</span>
-        <object type="image/svg+xml" data="/Uploads/Images/creative-jar-logo.svg"></object>
+        <object type="image/svg+xml" data="/guidelines/Uploads/Images/creative-jar-logo.svg"></object>
     </a>
     <nav role="navigation">
 	    <button data-icon-name="hamburger"><span>Menu</span></button>
@@ -22,23 +22,23 @@
 		<ul>
 			
 			<li>
-				<a  href="/">Home</a>
+				<a  href="/guidelines/">Home</a>
 			</li>
 			
 			<li>
-				<a class="is-active" href="/project-structure/">Project Structure</a>
+				<a class="is-active" href="/guidelines/project-structure/">Project Structure</a>
 			</li>
 			
 			<li>
-				<a  href="/html/">HTML</a>
+				<a  href="/guidelines/html/">HTML</a>
 			</li>
 			
 			<li>
-				<a  href="/css/">CSS</a>
+				<a  href="/guidelines/css/">CSS</a>
 			</li>
 			
 			<li>
-				<a  href="/testing/">Testing</a>
+				<a  href="/guidelines/testing/">Testing</a>
 			</li>
 			
 		</ul>
@@ -75,16 +75,22 @@
 		</ul>
 	</div>
 	<div class="l-col">
-		<div class="highlight"><pre><code class="language-bash" data-lang="bash">.
+		<figure class="highlight"><pre><code class="language-bash" data-lang="bash">.
 ├── UI
-<span class="p">|</span>   ├── CSS
-<span class="p">|</span>   ├── Images
-<span class="p">|</span>   ├── JavaScript
-<span class="p">|</span>   ├── Sass
-<span class="p">|</span>   └── Styleguide
+|   ├── Dist
+|   |   ├── CSS
+|   |   ├── Images
+|   |   ├── JavaScript
+|   |   └── Styleguide
+|   ├── SRC
+|   |   ├── CSS
+|   |   ├── Images
+|   |   ├── JavaScript
+|   |   ├── Sass
 ├── Uploads
-<span class="p">|</span>   ├── Images
-<span class="p">|</span>   └── PDF</code></pre></div>
+|   ├── Images
+|   └── PDF
+		</code></pre></figure>
 	</div>
 </div>
 <div class="l-container columns" id="css-sass">
@@ -107,14 +113,16 @@
 		</ul>
 	</div>
 	<div class="l-col">
-		<div class="highlight"><pre><code class="language-bash" data-lang="bash">.
+		<figure class="highlight"><pre><code class="language-bash" data-lang="bash">.
 ├── UI
-<span class="p">|</span>   ├── Images
-<span class="p">|</span>   <span class="p">|</span>   ├── HeaderBg.png
-<span class="p">|</span>   <span class="p">|</span>   └── Icons
+|   ├── SRC
+|   |   ├── Images
+|   |   |   ├── HeaderBg.png
+|   |   |   └── Icons
 ├── Uploads
-<span class="p">|</span>   ├── Images
-<span class="p">|</span>   <span class="p">|</span>   └── creative-jar-logo.png</code></pre></div>		
+|   ├── Images
+|   |   └── creative-jar-logo.png
+		</code></pre></figure>		
 	</div>
 </div>
 <div class="l-container columns" id="javascript">
@@ -129,16 +137,18 @@
 			</ul>
 	</div>
 	<div class="l-col">
-		<div class="highlight"><pre><code class="language-bash" data-lang="bash">.
+		<figure class="highlight"><pre><code class="language-bash" data-lang="bash">.
 ├── UI
-<span class="p">|</span>   ├── JavaScript
-<span class="p">|</span>   <span class="p">|</span>   ├── Components
-<span class="p">|</span>   <span class="p">|</span>   <span class="p">|</span>   ├── Navigation.js
-<span class="p">|</span>   <span class="p">|</span>   <span class="p">|</span>   └── Tabs.js
-<span class="p">|</span>   <span class="p">|</span>   ├── Vendor
-<span class="p">|</span>   <span class="p">|</span>   <span class="p">|</span>   └── jquery-1.11.2.min.js
-<span class="p">|</span>   <span class="p">|</span>   ├── Global.js
-<span class="p">|</span>   <span class="p">|</span>   └── Product.js</code></pre></div>
+|   ├── SRC
+|   |   ├── JavaScript
+|   |   |   ├── Components
+|   |   |   |   ├── Navigation.js
+|   |   |   |   └── Tabs.js
+|   |   |   ├── Vendor
+|   |   |   |   └── jquery-1.11.2.min.js
+|   |   |   ├── Global.js
+|   |   |   └── Product.js
+		</code></pre></figure>
 	</div>
 </div>
 <div class="l-container columns" id="styleguide">
@@ -157,6 +167,6 @@
 		<p>&copy; Creative Jar 2015</p>
 	</div>
 </footer>    
-    <script data-main="/UI/JavaScript/Global" src="/UI/JavaScript/Vendor/require.min.js"></script>
+    <script data-main="/guidelines/UI/JavaScript/Global" src="/guidelines/UI/JavaScript/Vendor/require.min.js"></script>
   </body>
 </html>

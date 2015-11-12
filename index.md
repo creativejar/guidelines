@@ -39,6 +39,15 @@ A boilerplate project has been created which follows the guidelines outlined in 
 
 The boilerplate can be found and maintained on [Github](https://github.com/creativejar/boilerplate).
 
+## QA
+To ensure that projects are developed to meet these standards, regular checks of the code will be carried out my senior members of the team. 
+
+To automate this process in parts, [SCSS Linting](https://github.com/brigade/scss-lint) is included in our standard boilerplate through Gulp to highlight areas where your code can be improved.
+
+Our rules are defined with the [.scss-lint.yml](https://github.com/creativejar/boilerplate/blob/master/.scss-lint.yml) file in our boilerplate. For explanation of these rules, please see the [Linters documentation](https://github.com/brigade/scss-lint/blob/master/lib/scss_lint/linter/README.md).
+
+Please ensure that your code passes these tests.
+
 ## Table of contents
 * [Project Structure](/guidelines/project-structure/)
 	* [Introduction](/guidelines/project-structure/#structure)
@@ -54,8 +63,6 @@ The boilerplate can be found and maintained on [Github](https://github.com/creat
 	* [Character encoding](/guidelines/html/#character-encoding)
 	* [IE Compatibility mode](/guidelines/html/#ie-compatibility-mode)
 	* [CSS & JavaScript includes](/guidelines/html/#css-javascript-includes)
-	* [Attribute order](/guidelines/html/#attribute-order)
-	* [Naming components](/guidelines/html/#naming-components)
 	* [Boolean attributes](/guidelines/html/#boolean-attributes)
 	* [Semantics](/guidelines/html/#semantics)
 	* [Reducing markup](/guidelines/html/#reducing-markup)

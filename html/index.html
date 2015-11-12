@@ -133,43 +133,6 @@ weight: 2
 		{% endhighlight %}
 	</div>
 </div>
-<div class="l-container columns" id="attribute-order">
-	<div class="l-col">
-		<h2>Attribute order</h2>
-	    <p>HTML attributes should come in this particular order for easier reading of code.</p>
-	    <ul>
-	      <li><code>class</code></li>
-	      <li><code>id</code>, <code>name</code></li>
-	      <li><code>data-*</code></li>
-	      <li><code>src</code>, <code>for</code>, <code>type</code>, <code>href</code>, <code>value</code></li>
-	      <li><code>title</code>, <code>alt</code></li>
-	      <li><code>aria-*</code>, <code>role</code></li>
-	    </ul>
-	    <p>Classes make for great reusable components, so they come first. Ids are more specific and should be used sparingly (e.g., for in-page bookmarks), so they come second.</p>
-	</div>
-	<div class="l-col">
-		{% highlight html %}
-<a class="..." id="..." data-modal="toggle" href="#">
-	Link</a>
-
-<input class="form-control" type="text">
-
-<img src="..." alt="...">
-		{% endhighlight %}
-	</div>
-</div>
-<div class="l-container columns" id="naming-components">
-	<div class="l-col">
-		<h2>Naming Components</h2>
-		<p>Keep using agnostic, abstract, OOCSS classes in your markup, but add any desired meaning to your HTML via a data-ui-component attribute. Recommended reading: <a href="http://csswizardry.com/2014/03/naming-ui-components-in-oocss/
-	">Naming UI Components in OOCSS</a>.</p>
-	</div>
-	<div class="l-col">
-		{% highlight html %}
-<ul class="feature-list" data-ui-component="users-list">
-		{% endhighlight %}
-	</div>
-</div>
 <div class="l-container columns" id="boolean-attributes">
 	<div class="l-col">
 		<h2>Boolean attributes</h2>
