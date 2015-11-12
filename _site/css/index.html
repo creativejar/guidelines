@@ -1,20 +1,20 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-gb">
 	<head>
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>UI Guidelines &bull; CSS</title>
 		<meta name="description" content="">		
-		<link rel="stylesheet" href="/UI/CSS/Default.css">
-		<link rel="canonical" href="/css/">
-		<link rel="alternate" type="application/rss+xml" title="UI Guidelines" href="/feed.xml" />
+		<link rel="stylesheet" href="/guidelines/UI/CSS/Default.css">
+		<link rel="canonical" href="/guidelines/css/">
+		<link rel="alternate" type="application/rss+xml" title="UI Guidelines" href="/guidelines/feed.xml" />
 	</head>
   <body>
     <header role="banner">
 	<a class="cj-logo" href="http://www.creative-jar.com">
         <span hidden>Creative Jar</span>
-        <object type="image/svg+xml" data="/Uploads/Images/creative-jar-logo.svg"></object>
+        <object type="image/svg+xml" data="/guidelines/Uploads/Images/creative-jar-logo.svg"></object>
     </a>
     <nav role="navigation">
 	    <button data-icon-name="hamburger"><span>Menu</span></button>
@@ -22,23 +22,23 @@
 		<ul>
 			
 			<li>
-				<a  href="/">Home</a>
+				<a  href="/guidelines/">Home</a>
 			</li>
 			
 			<li>
-				<a  href="/project-structure/">Project Structure</a>
+				<a  href="/guidelines/project-structure/">Project Structure</a>
 			</li>
 			
 			<li>
-				<a  href="/html/">HTML</a>
+				<a  href="/guidelines/html/">HTML</a>
 			</li>
 			
 			<li>
-				<a class="is-active" href="/css/">CSS</a>
+				<a class="is-active" href="/guidelines/css/">CSS</a>
 			</li>
 			
 			<li>
-				<a  href="/testing/">Testing</a>
+				<a  href="/guidelines/testing/">Testing</a>
 			</li>
 			
 		</ul>
@@ -81,35 +81,36 @@
 		</ul>
 	</div>
 	<div class="l-col">
-		<div class="highlight"><pre><code class="language-bash" data-lang="bash">.
+		<figure class="highlight"><pre><code class="language-bash" data-lang="bash">.
 ├── CSS
-<span class="p">|</span>   ├── Default.css
-<span class="p">|</span>   └── Default.min.css
+|   ├── Default.css
+|   └── Default.min.css
 ├── Sass
-<span class="p">|</span>   ├── Base
-<span class="p">|</span>   <span class="p">|</span>   ├── _Headings.scss
-<span class="p">|</span>   <span class="p">|</span>   ├── _Links.scss
-<span class="p">|</span>   <span class="p">|</span>   ├── _Lists.scss
-<span class="p">|</span>   <span class="p">|</span>   ├── _Main.scss
-<span class="p">|</span>   <span class="p">|</span>   └── _Paragraphs.scss
-<span class="p">|</span>   ├── Components
-<span class="p">|</span>   <span class="p">|</span>   ├── _Banner.scss
-<span class="p">|</span>   <span class="p">|</span>   ├── _Content.scss
-<span class="p">|</span>   <span class="p">|</span>   └── _Social.scss
-<span class="p">|</span>   ├── Regions
-<span class="p">|</span>   <span class="p">|</span>   ├── _Footer.scss
-<span class="p">|</span>   <span class="p">|</span>   ├── _Header.scss
-<span class="p">|</span>   <span class="p">|</span>   ├── _Main.scss
-<span class="p">|</span>   <span class="p">|</span>   └── _Navigation.scss
-<span class="p">|</span>   ├── Shared
-<span class="p">|</span>   <span class="p">|</span>   ├── _Clearfix.scss
-<span class="p">|</span>   <span class="p">|</span>   ├── _ColourPalette.scss
-<span class="p">|</span>   <span class="p">|</span>   ├── _Grid.scss
-<span class="p">|</span>   <span class="p">|</span>   ├── _MIPalette.scss
-<span class="p">|</span>   <span class="p">|</span>   ├── _Reset.scss
-<span class="p">|</span>   <span class="p">|</span>   └── _Settings.scss
-<span class="p">|</span>   └── Vendor
-<span class="p">|</span>   <span class="p">|</span>   └── _SyntaxHighlighting.scss</code></pre></div>
+|   ├── Base
+|   |   ├── _Headings.scss
+|   |   ├── _Links.scss
+|   |   ├── _Lists.scss
+|   |   ├── _Main.scss
+|   |   └── _Paragraphs.scss
+|   ├── Components
+|   |   ├── _Banner.scss
+|   |   ├── _Content.scss
+|   |   └── _Social.scss
+|   ├── Regions
+|   |   ├── _Footer.scss
+|   |   ├── _Header.scss
+|   |   ├── _Main.scss
+|   |   └── _Navigation.scss
+|   ├── Shared
+|   |   ├── _Clearfix.scss
+|   |   ├── _ColourPalette.scss
+|   |   ├── _Grid.scss
+|   |   ├── _MIPalette.scss
+|   |   ├── _Reset.scss
+|   |   └── _Settings.scss
+|   └── Vendor
+|   |   └── _SyntaxHighlighting.scss
+		</code></pre></figure>
 	</div>
 </div>
 <div class="l-container columns" id="documentation">
@@ -121,16 +122,17 @@
 		</ul>
 	</div>
 	<div class="l-col">
-		<div class="highlight"><pre><code class="language-scss" data-lang="scss"><span class="cm">/*doc</span>
-<span class="cm">---</span>
-<span class="cm">title: Alert</span>
-<span class="cm">name: alert</span>
-<span class="cm">category: basics</span>
-<span class="cm">---</span>
-<span class="cm">```html_example</span>
-<span class="cm">    &lt;div class=&#39;alert&#39;&gt;Hello&lt;/div&gt;</span>
-<span class="cm">```</span>
-<span class="cm">*/</span></code></pre></div>
+		<figure class="highlight"><pre><code class="language-scss" data-lang="scss"><span class="cm">/*doc
+---
+title: Alert
+name: alert
+category: basics
+---
+```html_example
+    &lt;div class='alert'&gt;Hello&lt;/div&gt;
+```
+*/</span>
+		</code></pre></figure>
 	</div>
 </div>
 <div class="l-container columns" id="reset">
@@ -155,14 +157,15 @@
 			<li>When declaring CSS3 properties, vendor prefixes should appear before the standardised properties, whilst remaining alphabetised.</li>
 	</div>
 	<div class="l-col">
-		<div class="highlight"><pre><code class="language-scss" data-lang="scss"><span class="nn">#selector</span> <span class="p">{</span>
-    <span class="na">background</span><span class="o">:</span>                  <span class="nf">rgb</span><span class="p">(</span><span class="mi">0</span><span class="o">,</span> <span class="mi">0</span><span class="o">,</span> <span class="mi">0</span><span class="p">)</span> <span class="sx">url(&#39;../Images/Bg.gif&#39;)</span> <span class="no">no-repeat</span><span class="p">;</span>
-    <span class="na">-moz-box-shadow</span><span class="o">:</span>             <span class="mi">0</span> <span class="mi">0</span> <span class="mi">10</span><span class="kt">px</span> <span class="nf">rgba</span><span class="p">(</span><span class="mi">0</span><span class="o">,</span><span class="mi">0</span><span class="o">,</span><span class="mi">0</span><span class="o">,.</span><span class="mi">2</span><span class="p">);</span>
-    <span class="na">-wekbit-box-shadow</span><span class="o">:</span>          <span class="mi">0</span> <span class="mi">0</span> <span class="mi">10</span><span class="kt">px</span> <span class="nf">rgba</span><span class="p">(</span><span class="mi">0</span><span class="o">,</span><span class="mi">0</span><span class="o">,</span><span class="mi">0</span><span class="o">,.</span><span class="mi">2</span><span class="p">);</span>
-    <span class="na">box-shadow</span><span class="o">:</span>                  <span class="mi">0</span> <span class="mi">0</span> <span class="mi">10</span><span class="kt">px</span> <span class="nf">rgba</span><span class="p">(</span><span class="mi">0</span><span class="o">,</span><span class="mi">0</span><span class="o">,</span><span class="mi">0</span><span class="o">,.</span><span class="mi">2</span><span class="p">);</span>
-    <span class="na">color</span><span class="o">:</span>                       <span class="nf">rgb</span><span class="p">(</span><span class="mi">255</span><span class="o">,</span> <span class="mi">255</span><span class="o">,</span> <span class="mi">255</span><span class="p">);</span>
-    <span class="na">font</span><span class="o">:</span>                        <span class="mi">14</span><span class="kt">px</span> <span class="n">Arial</span><span class="o">,</span> <span class="no">sans-serif</span><span class="p">;</span>
-<span class="p">}</span></code></pre></div>
+		<figure class="highlight"><pre><code class="language-scss" data-lang="scss"><span class="nn">#selector</span> <span class="p">{</span>
+    <span class="nl">background</span><span class="p">:</span>                  <span class="nf">rgb</span><span class="p">(</span><span class="m">0</span><span class="o">,</span> <span class="m">0</span><span class="o">,</span> <span class="m">0</span><span class="p">)</span> <span class="sx">url('../Images/Bg.gif')</span> <span class="nb">no-repeat</span><span class="p">;</span>
+    <span class="na">-moz-box-shadow</span><span class="p">:</span>             <span class="m">0</span> <span class="m">0</span> <span class="m">10px</span> <span class="nf">rgba</span><span class="p">(</span><span class="m">0</span><span class="o">,</span><span class="m">0</span><span class="o">,</span><span class="m">0</span><span class="o">,.</span><span class="m">2</span><span class="p">);</span>
+    <span class="na">-wekbit-box-shadow</span><span class="p">:</span>          <span class="m">0</span> <span class="m">0</span> <span class="m">10px</span> <span class="nf">rgba</span><span class="p">(</span><span class="m">0</span><span class="o">,</span><span class="m">0</span><span class="o">,</span><span class="m">0</span><span class="o">,.</span><span class="m">2</span><span class="p">);</span>
+    <span class="nl">box-shadow</span><span class="p">:</span>                  <span class="m">0</span> <span class="m">0</span> <span class="m">10px</span> <span class="nf">rgba</span><span class="p">(</span><span class="m">0</span><span class="o">,</span><span class="m">0</span><span class="o">,</span><span class="m">0</span><span class="o">,.</span><span class="m">2</span><span class="p">);</span>
+    <span class="nl">color</span><span class="p">:</span>                       <span class="nf">rgb</span><span class="p">(</span><span class="m">255</span><span class="o">,</span> <span class="m">255</span><span class="o">,</span> <span class="m">255</span><span class="p">);</span>
+    <span class="nl">font</span><span class="p">:</span>                        <span class="m">14px</span> <span class="n">Arial</span><span class="o">,</span> <span class="nb">sans-serif</span><span class="p">;</span>
+<span class="p">}</span>
+		</code></pre></figure>
 	</div>
 </div>
 <div class="l-container columns" id="nesting-and-specificity">
@@ -177,7 +180,7 @@
 		</ul>
 	</div>
 	<div class="l-col">
-		<div class="highlight"><pre><code class="language-scss" data-lang="scss"><span class="cm">/* Bad CSS */</span>
+		<figure class="highlight"><pre><code class="language-scss" data-lang="scss"><span class="cm">/* Bad CSS */</span>
 <span class="nt">nav</span><span class="nn">#primary</span> <span class="p">{</span>
 	<span class="nt">ul</span> <span class="p">{</span>
 		<span class="nt">li</span> <span class="p">{</span>
@@ -210,7 +213,8 @@
 			<span class="p">}</span>
 		<span class="p">}</span>
 	<span class="p">}</span>
-<span class="p">}</span></code></pre></div>
+<span class="p">}</span>
+		</code></pre></figure>
 	</div>
 </div>
 <div class="l-container columns" id="naming-conventions">
@@ -228,7 +232,7 @@
 		</ul>
 	</div>
 	<div class="l-col">
-		<div class="highlight"><pre><code class="language-scss" data-lang="scss"><span class="nc">.panel</span> <span class="p">{</span>
+		<figure class="highlight"><pre><code class="language-scss" data-lang="scss"><span class="nc">.panel</span> <span class="p">{</span>
 	<span class="nc">...</span>
 <span class="p">}</span>
 
@@ -246,7 +250,8 @@
 
 <span class="nc">.l-col</span> <span class="p">{</span>
 	<span class="nc">...</span>
-<span class="p">}</span></code></pre></div>
+<span class="p">}</span>
+		</code></pre></figure>
 	</div>
 </div>
 <div class="l-container columns" id="variables">
@@ -260,20 +265,21 @@
 		</ul>
 	</div>
 	<div class="l-col">
-		<div class="highlight"><pre><code class="language-scss" data-lang="scss"><span class="c1">// Base Typography</span>
-<span class="nv">$font-size-base</span><span class="o">:</span>             <span class="mi">15</span><span class="kt">px</span><span class="p">;</span>
-<span class="nv">$line-height-base</span><span class="o">:</span>           <span class="mi">25</span><span class="kt">px</span><span class="p">;</span>
+		<figure class="highlight"><pre><code class="language-scss" data-lang="scss"><span class="c1">// Base Typography
+</span><span class="nv">$font-size-base</span><span class="p">:</span>             <span class="m">15px</span><span class="p">;</span>
+<span class="nv">$line-height-base</span><span class="p">:</span>           <span class="m">25px</span><span class="p">;</span>
 
-<span class="nv">$font-size-small</span><span class="o">:</span>            <span class="mi">12</span><span class="kt">px</span><span class="p">;</span>
-<span class="nv">$font-size-tiny</span><span class="o">:</span>             <span class="mi">10</span><span class="kt">px</span><span class="p">;</span>
+<span class="nv">$font-size-small</span><span class="p">:</span>            <span class="m">12px</span><span class="p">;</span>
+<span class="nv">$font-size-tiny</span><span class="p">:</span>             <span class="m">10px</span><span class="p">;</span>
 
-<span class="c1">// Font Stacks</span>
-<span class="nv">$font-family-base</span><span class="o">:</span>           <span class="s1">&#39;</span><span class="s2">Arial&#39;</span><span class="o">,</span> <span class="no">sans-serif</span><span class="p">;</span>
+<span class="c1">// Font Stacks
+</span><span class="nv">$font-family-base</span><span class="p">:</span>           <span class="s1">'Arial'</span><span class="o">,</span> <span class="nb">sans-serif</span><span class="p">;</span>
 
-<span class="c1">// Default Spacing</span>
-<span class="nv">$spacing-unit-base</span><span class="o">:</span>          <span class="mi">25</span><span class="kt">px</span><span class="p">;</span>
-<span class="nv">$spacing-unit-large</span><span class="o">:</span>         <span class="nv">$spacing-unit-base</span><span class="o">*</span><span class="mi">2</span><span class="p">;</span>
-<span class="nv">$spacing-unit-small</span><span class="o">:</span>         <span class="nv">$spacing-unit-base</span><span class="o">/</span><span class="mi">2</span><span class="p">;</span></code></pre></div>
+<span class="c1">// Default Spacing
+</span><span class="nv">$spacing-unit-base</span><span class="p">:</span>          <span class="m">25px</span><span class="p">;</span>
+<span class="nv">$spacing-unit-large</span><span class="p">:</span>         <span class="nv">$spacing-unit-base</span><span class="o">*</span><span class="m">2</span><span class="p">;</span>
+<span class="nv">$spacing-unit-small</span><span class="p">:</span>         <span class="nv">$spacing-unit-base</span><span class="o">/</span><span class="m">2</span><span class="p">;</span>
+		</code></pre></figure>
 	</div>
 </div>
 <div class="l-container columns" id="colours">
@@ -286,26 +292,27 @@
 		</ul>
 	</div>
 	<div class="l-col">
-		<div class="highlight"><pre><code class="language-scss" data-lang="scss"><span class="nv">$color-neutral-grey</span><span class="o">:</span>         <span class="nf">rgb</span><span class="p">(</span><span class="mi">53</span><span class="o">,</span> <span class="mi">53</span><span class="o">,</span> <span class="mi">53</span><span class="p">);</span>
-<span class="nv">$color-brand-accent</span><span class="o">:</span>         <span class="nf">rgb</span><span class="p">(</span><span class="mi">255</span><span class="o">,</span> <span class="mi">70</span><span class="o">,</span> <span class="mi">0</span><span class="p">);</span>
+		<figure class="highlight"><pre><code class="language-scss" data-lang="scss"><span class="nv">$color-neutral-grey</span><span class="p">:</span>         <span class="nf">rgb</span><span class="p">(</span><span class="m">53</span><span class="o">,</span> <span class="m">53</span><span class="o">,</span> <span class="m">53</span><span class="p">);</span>
+<span class="nv">$color-brand-accent</span><span class="p">:</span>         <span class="nf">rgb</span><span class="p">(</span><span class="m">255</span><span class="o">,</span> <span class="m">70</span><span class="o">,</span> <span class="m">0</span><span class="p">);</span>
 
-<span class="nv">$palettes</span><span class="o">:</span> <span class="p">(</span>
+<span class="nv">$palettes</span><span class="p">:</span> <span class="p">(</span>
     <span class="n">neutral</span><span class="o">:</span> <span class="p">(</span>
-        <span class="n">base</span><span class="o">:</span>                <span class="nf">rgb</span><span class="p">(</span><span class="mi">255</span><span class="o">,</span> <span class="mi">255</span><span class="o">,</span> <span class="mi">255</span><span class="p">)</span><span class="o">,</span> 
-        <span class="n">dark</span><span class="o">:</span>                <span class="nf">rgb</span><span class="p">(</span><span class="mi">0</span><span class="o">,</span> <span class="mi">0</span><span class="o">,</span> <span class="mi">0</span><span class="p">)</span>
+        <span class="n">base</span><span class="o">:</span>                <span class="nf">rgb</span><span class="p">(</span><span class="m">255</span><span class="o">,</span> <span class="m">255</span><span class="o">,</span> <span class="m">255</span><span class="p">)</span><span class="o">,</span> 
+        <span class="n">dark</span><span class="o">:</span>                <span class="nf">rgb</span><span class="p">(</span><span class="m">0</span><span class="o">,</span> <span class="m">0</span><span class="o">,</span> <span class="m">0</span><span class="p">)</span>
     <span class="p">)</span><span class="o">,</span> 
     <span class="n">neutral-grey</span><span class="o">:</span> <span class="p">(</span>
         <span class="n">base</span><span class="o">:</span>                <span class="nv">$color-neutral-grey</span><span class="o">,</span>
-        <span class="n">dark</span><span class="o">:</span>                <span class="nf">rgb</span><span class="p">(</span><span class="mi">36</span><span class="o">,</span> <span class="mi">36</span><span class="o">,</span> <span class="mi">36</span><span class="p">)</span><span class="o">,</span> 
-        <span class="n">light</span><span class="o">:</span>               <span class="nf">lighten</span><span class="p">(</span><span class="nv">$color-neutral-grey</span><span class="o">,</span> <span class="mi">70</span><span class="kt">%</span><span class="p">)</span>
+        <span class="n">dark</span><span class="o">:</span>                <span class="nf">rgb</span><span class="p">(</span><span class="m">36</span><span class="o">,</span> <span class="m">36</span><span class="o">,</span> <span class="m">36</span><span class="p">)</span><span class="o">,</span> 
+        <span class="n">light</span><span class="o">:</span>               <span class="nf">lighten</span><span class="p">(</span><span class="nv">$color-neutral-grey</span><span class="o">,</span> <span class="m">70%</span><span class="p">)</span>
     <span class="p">)</span><span class="o">,</span> 
     <span class="n">brand-accent</span><span class="o">:</span> <span class="p">(</span>
         <span class="n">base</span><span class="o">:</span>                <span class="nv">$color-brand-accent</span><span class="o">,</span> 
     <span class="p">)</span><span class="o">,</span> 
-    <span class="nb">blue</span><span class="o">:</span> <span class="p">(</span>
-        <span class="n">base</span><span class="o">:</span>                <span class="nf">rgb</span><span class="p">(</span><span class="mi">0</span><span class="o">,</span> <span class="mi">123</span><span class="o">,</span> <span class="mi">145</span><span class="p">)</span>
+    <span class="no">blue</span><span class="o">:</span> <span class="p">(</span>
+        <span class="n">base</span><span class="o">:</span>                <span class="nf">rgb</span><span class="p">(</span><span class="m">0</span><span class="o">,</span> <span class="m">123</span><span class="o">,</span> <span class="m">145</span><span class="p">)</span>
     <span class="p">)</span>
-<span class="p">);</span></code></pre></div>
+<span class="p">);</span>
+		</code></pre></figure>
 	</div>
 </div>
 <div class="l-container columns" id="units">
@@ -326,23 +333,24 @@
 		</ul>
 	</div>
 	<div class="l-col">
-		<div class="highlight"><pre><code class="language-scss" data-lang="scss"><span class="k">@import</span> <span class="s2">&quot;susy&quot;</span><span class="p">;</span>
+		<figure class="highlight"><pre><code class="language-scss" data-lang="scss"><span class="k">@import</span> <span class="s2">"susy"</span><span class="p">;</span>
 
-<span class="nv">$susy</span><span class="o">:</span> <span class="p">(</span>
-    <span class="n">columns</span><span class="o">:</span>                  <span class="mi">12</span><span class="o">,</span>
+<span class="nv">$susy</span><span class="p">:</span> <span class="p">(</span>
+    <span class="n">columns</span><span class="o">:</span>                  <span class="m">12</span><span class="o">,</span>
     <span class="n">math</span><span class="o">:</span>                     <span class="n">fluid</span><span class="o">,</span>
-    <span class="n">output</span><span class="o">:</span>                   <span class="no">float</span>
+    <span class="n">output</span><span class="o">:</span>                   <span class="n">float</span>
 <span class="p">);</span>
 
 <span class="nc">.l-container</span> <span class="p">{</span>
-    <span class="k">@include</span>                  <span class="nt">container</span><span class="o">(</span><span class="nt">1280px</span><span class="o">);</span>
-    <span class="nt">padding</span><span class="nd">:</span>                  <span class="nt">0</span> <span class="nt">gutter</span><span class="o">(</span><span class="nt">12</span><span class="o">);</span>
+    <span class="k">@include</span>                  <span class="nd">container</span><span class="p">(</span><span class="m">1280px</span><span class="p">);</span>
+    <span class="nl">padding</span><span class="p">:</span>                  <span class="m">0</span> <span class="nf">gutter</span><span class="p">(</span><span class="m">12</span><span class="p">);</span>
 <span class="p">}</span>
 
 <span class="nc">.l-col</span> <span class="p">{</span>
-    <span class="na">padding</span><span class="o">:</span>                  <span class="mi">0</span> <span class="nf">gutter</span><span class="p">(</span><span class="mi">12</span><span class="p">);</span>
-    <span class="na">width</span><span class="o">:</span>                    <span class="nf">span</span><span class="p">(</span><span class="mi">6</span> <span class="n">of</span> <span class="mi">12</span><span class="p">);</span>
-<span class="p">}</span></code></pre></div>
+    <span class="nl">padding</span><span class="p">:</span>                  <span class="m">0</span> <span class="nf">gutter</span><span class="p">(</span><span class="m">12</span><span class="p">);</span>
+    <span class="nl">width</span><span class="p">:</span>                    <span class="nf">span</span><span class="p">(</span><span class="m">6</span> <span class="n">of</span> <span class="m">12</span><span class="p">);</span>
+<span class="p">}</span>
+		</code></pre></figure>
 	</div>
 </div>
 <div class="l-container columns" id="media-queries">
@@ -356,17 +364,18 @@
 		</ul>
 	</div>
 	<div class="l-col">
-		<div class="highlight"><pre><code class="language-scss" data-lang="scss"><span class="k">@import</span> <span class="s2">&quot;breakpoint&quot;</span><span class="p">;</span>
+		<figure class="highlight"><pre><code class="language-scss" data-lang="scss"><span class="k">@import</span> <span class="s2">"breakpoint"</span><span class="p">;</span>
 
-<span class="nv">$breakpoint-large</span><span class="o">:</span>            <span class="mi">1000</span><span class="kt">px</span><span class="p">;</span>
-<span class="nv">$breakpoint-medium</span><span class="o">:</span>           <span class="mi">600</span><span class="kt">px</span><span class="p">;</span>
-<span class="nv">$breakpoint-small</span><span class="o">:</span>            <span class="mi">400</span><span class="kt">px</span><span class="p">;</span>
+<span class="nv">$breakpoint-large</span><span class="p">:</span>            <span class="m">1000px</span><span class="p">;</span>
+<span class="nv">$breakpoint-medium</span><span class="p">:</span>           <span class="m">600px</span><span class="p">;</span>
+<span class="nv">$breakpoint-small</span><span class="p">:</span>            <span class="m">400px</span><span class="p">;</span>
 
 <span class="nt">nav</span><span class="o">[</span><span class="nt">role</span><span class="o">=</span><span class="nt">navigation</span><span class="o">]</span> <span class="nt">ul</span> <span class="nt">li</span> <span class="p">{</span>
-	<span class="k">@include</span><span class="nd"> breakpoint</span><span class="p">(</span><span class="nv">$breakpoint-small</span><span class="p">)</span> <span class="p">{</span>
+	<span class="k">@include</span> <span class="nd">breakpoint</span><span class="p">(</span><span class="nv">$breakpoint-small</span><span class="p">)</span> <span class="p">{</span>
 		<span class="nc">...</span>
 	<span class="p">}</span>
-<span class="p">}</span></code></pre></div>
+<span class="p">}</span>
+		</code></pre></figure>
 	</div>
 </div>
 <div class="l-container columns" id="icons">
@@ -384,6 +393,6 @@
 		<p>&copy; Creative Jar 2015</p>
 	</div>
 </footer>    
-    <script data-main="/UI/JavaScript/Global" src="/UI/JavaScript/Vendor/require.min.js"></script>
+    <script data-main="/guidelines/UI/JavaScript/Global" src="/guidelines/UI/JavaScript/Vendor/require.min.js"></script>
   </body>
 </html>
